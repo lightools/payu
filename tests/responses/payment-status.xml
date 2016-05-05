@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <status>OK</status>
+  <trans>
+    <id>699680000</id>
+    <pos_id>200000</pos_id>
+    <session_id>2016-05-06-09-06-32</session_id>
+    <order_id>1000</order_id>
+    <amount>9000</amount>
+    <status>99</status>
+    <pay_type>t</pay_type>
+    <pay_gw_name>t</pay_gw_name>
+    <desc>description</desc>
+    <desc2/>
+    <create>2016-05-06 09:07:31</create>
+    <init>2016-05-06 09:07:48</init>
+    <sent>2016-05-06 09:07:52</sent>
+    <recv>2016-05-06 09:07:52</recv>
+    <cancel/>
+    <auth_fraud>0</auth_fraud>
+    <ts>1462518473279</ts>
+    <sig>186a15354381a22285ffa83c5451ca2d</sig>
+    <add_client_name/>
+    <add_client_street/>
+    <add_client_city/>
+    <add_client_post_code/>
+    <add_client_account/>
+    <add_client_address/>
+    <add_cc_number_hash>C362481e45cf83da78cd64812495ee</add_cc_number_hash>
+    <add_cc_bin>510600</add_cc_bin>
+  </trans>
+</response>
