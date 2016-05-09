@@ -35,7 +35,7 @@ exit();
 // 2. accept payment update (on "UrlOnline")
 try {
     $post = filter_input_array(INPUT_POST);
-    $status = $payu->getPaymentStatusChange($post);
+    $status = $payu->getPaymentStatus($post);
 
     $status->getOrderId();
     $status->getStatus(); // e.g. PaymentStatus::STATUS_PAID

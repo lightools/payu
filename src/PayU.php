@@ -160,7 +160,7 @@ class PayU {
      * @throws InvalidSignatureException
      * @throws RequestFailedException
      */
-    public function getPaymentStatusChange(array $post) {
+    public function getPaymentStatus(array $post) {
 
         $this->checkReceivedPostData($post);
         $request = $this->buildStatusRequest($post);

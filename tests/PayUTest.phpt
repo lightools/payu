@@ -88,7 +88,7 @@ class PayUTest extends TestCase {
         $post['sig'] = md5($post['pos_id'] . $post['session_id'] . $post['ts'] . $key2);
 
         $payu = new PayU($posId, $posAuthKey, $key1, $key2, $httpClient, new XmlLoader());
-        $status = $payu->getPaymentStatusChange($post);
+        $status = $payu->getPaymentStatus($post);
 
         Assert::same(PaymentStatus::STATUS_PAID, $status->getStatus());
         Assert::same('2016-05-06 09:07:31', $status->getCreated()->format('Y-m-d H:i:s'));
@@ -120,11 +120,11 @@ class PayUTest extends TestCase {
         $payu = new PayU($posId, $posAuthKey, $key1, $key2, $httpClient, $xmlLoader);
 
         Assert::exception(function () use ($payu, $post1) {
-            $payu->getPaymentStatusChange($post1);
+            $payu->getPaymentStatus($post1);
         }, InvalidSignatureException::class);
 
         Assert::exception(function () use ($payu, $post2) {
-            $payu->getPaymentStatusChange($post2);
+            $payu->getPaymentStatus($post2);
         }, InvalidRequestException::class);
     }
 
