@@ -28,6 +28,7 @@ class PaymentStatus {
         self::STATUS_REJECTED,
         self::STATUS_STARTED,
         self::STATUS_AWAITING,
+        self::STATUS_RETURNED,
         self::STATUS_PAID,
         self::STATUS_FAILURE,
     ];
