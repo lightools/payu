@@ -38,7 +38,7 @@ class PayU {
         self::CHANNEL_MBANK => 'mPeníze - mBank',
         self::CHANNEL_KB => 'MojePlatba - Komerční banka',
         self::CHANNEL_RF => 'ePlatba - Raiffeisenbank',
-        self::CHANNEL_GE => 'GE Money Bank',
+        self::CHANNEL_GE => 'MONETA Money bank',
         self::CHANNEL_SBERBANK => 'Sberbank',
         self::CHANNEL_FIO => 'Fio banka',
         self::CHANNEL_ERA => 'Era/Poštovní spořitelna',
